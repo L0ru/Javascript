@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First pass in DOM</title>
+</head>
+<body>
+    <h1>Hello DOM</h1>
+    <p> Um texto qualquer ai pra fazer o exercicio</p>
+    <div id='msg'> Mas outro pra falar de DOM</div>
+    <div id='msn'> Mas outro pra falar de DOM</div>
+    <div class='gvg'> Mas outro pra falar de DOM</div>
+    <p>Chamando a galera do mal</p>
+    <script>
+        var p1 = document.getElementsByTagName('p')[0]
+        document.write('Aqui esta a copia: ' + p1.innerText + '<br>')
+        p1.style.color = 'blue'
+        var d = document.getElementById('msg')
+        document.write(d.innerText)
+        d.style.color = 'green'
+        var c = document.querySelector('div#msn')
+        c.style.background = 'pink'
+        var ca = document.querySelector('div.gvg')
+        ca.style.background = 'yellow'
+    </script>
+</body>
+</html>
